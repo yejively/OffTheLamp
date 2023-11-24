@@ -9,9 +9,9 @@
 	<h1> index.jsp </h1>
 	
 	<%
-		// 페이지 테스트 //
+		// 페이지 테스트
+		//
 		response.sendRedirect("./Main.me");
-	// dafsdf
 	%>
 	
 </body>
