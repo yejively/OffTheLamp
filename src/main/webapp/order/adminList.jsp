@@ -42,7 +42,6 @@
 		<jsp:include page="/inc/topBar.jsp"></jsp:include>
 	</header>
 	<main>
-		<h1>${sessionScope.user_id } 님 환영합니다</h1>
 	<div id="container">
 		<input class="btn" type="button" style="background: gray;" value="예매관리"	onclick="location.href='./managerList.or'">
 		<input class="btn" type="button" value="회원정보수정"	onclick="location.href='./AdminUserInfoBoardAction.me'">
