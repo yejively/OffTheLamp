@@ -10,7 +10,7 @@
 	
 	<%
 		// 페이지 테스트
-// 		response.sendRedirect("./QnAWriteBoard.bo");
+ 		response.sendRedirect("./QnAWriteBoard.bo");
 		response.sendRedirect("./Main.me");
 	%>
 	
