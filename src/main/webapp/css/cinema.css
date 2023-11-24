@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+.c1 {
+	color: yellow;
+	margin-left: 200px;
+}
+
+#footer_b {
+	clear: left;
+}
+
+p {
+	margin-top: 10px;
+}
+
+#i1 {
+	float: left;
+}
+
+.cdiv {
+	border: 1px solid;
+	width: 200px;
+	height: 450px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+
+.cdiv2 {
+	border: 1px solid;
+	width: 200px;
+	height: 400px;
+	float: left;
+	text-align: center;
+}
+
+#section {
+	width: 1100px;
+	height: 600px;
+	clear: left;
+}
+
+#movie_res {
+	width: 1100px;
+	height: 90px;
+	border: 1px solid;
+	display: flex; /* ▶ 디스플레이 속성을 flex로 변경 */
+	align-items: center; /* ▶ 자식 요소의 세로 정렬 방식을 중앙으로 변경 */
+	justify-content: center; /* ▶ 자식 요소의 가로 정렬 방식을 중앙으로 변경 */
+	font-size: 25px;
+}
+
+#theater {
+	border: 1px solid;
+	width: 400px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+}
+
+#car_number {
+	border: 1px solid;
+	width: 300px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+}
+
+#btn1 {
+	position: relative;
+	margin-right: 150px;
+	line-height: 2;
+	background-color: #202020;
+	border: none;
+	color: white;
+}
+
+#section {
+	margin: 20px auto;
+}
+
+#text {
+	text-align: center;
+	line-height: 50px;
+}
+
+#otc {
+	width: 300px;
+	padding: 20px;
+	text-align: inherit;
+}
+
+#text1 {
+	line-height: 40px;
+	border-radius: 20px;
+	background-color: #202020;
+	border: none;
+	color: white;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.time {
+	font-size: 21px;
+}
+
+a:hover {
+	color: red;
+}
+
+a:focus {
+	color: red;
+}
+
+#con {
+	margin: 20px auto;
+}
+
+#date {
+	display: inline-flex;
+}
+
+#day {
+	padding-left: 20px;
+	font-size: 25px;
+	padding-top: 25px;
+}
+
+#month {
+	font-size: 33px;
+	padding-left: 10px;
+	color: white;
+}
+
+#orderMain {
+	height: 45px;
+}
+
+.divbox1 {
+	height: 400px;
+}
+
+#option {
+	background-color: #202020;
+	border: none;
+	color: white;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+#seatSubmit {
+    margin-top: 80px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin-left: 60px;
+    float: left;
+}
+
+#seatSubmit:hover{
+	text-shadow: 3px 3px 3px grey;
+}
+
+#seatImg{
+	font-size: 60px;
+    font-weight: bolder;
+    color: #de1002;
+    text-shadow: 3px 3px #202020;
+}
+
+#seatDiv{
+	margin-top: 80px;
+    margin-left: 150px;
+}
+
+.choiceDate {
+	font-size: 27px;
+}
+
+.region, .noCinema, .noMovie, .showMovie, .showTime, .time {
+	font-size: 18px;
+}

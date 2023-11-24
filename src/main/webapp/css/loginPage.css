@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/*로그인,비회원예매 박스*/
+.id_pw_wrap{
+	float: left;
+	
+	padding: 20px;
+	margin: 20px;
+	 padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#footer_b{
+	clear: left;
+}
+
+
+.pp{
+	display: flex;
+	margin: 0 auto;
+	height:400px;
+	width: 600px;
+}
+
+/*비회원예매바로가기 버튼*/
+.btn_login {
+	background: white;
+	border-radius: 7px;
+	padding: 5px;
+}
+/*로그인 버튼 */
+.btn_login1{
+	margin: 0 auto;
+	margin-top: 1.5em;
+	background: white;
+	border-radius: 7px;
+	padding: 5px;
+	width: 13em;
+	height: 3em;
+}
+
+/*입력받는칸*/
+.id_pw{
+	border-radius: 7px;
+	padding: 5px;
+	margin: 0em auto;
+	width: 15em;
+}
+
+/*버튼사이사이 띄우기*/
+#hiddenMsgId{
+/* 	padding: 15px; */
+}
+#hiddenLogin{
+/* 	padding: 19px; */
+}
+
+
+#hidden2{
+	padding: 0.5px;
+}
+#hidden3{
+	padding: 1px;
+}
+#kakao{
+	margin-left: 8px;
+	
+}

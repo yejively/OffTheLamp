@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* 비밀번호찾기(글자) 있는 섹션*/
+#join_box {
+  text-align: center;
+  margin: 0 auto;
+  width: 25em; 
+}
+
+/*비밀번호찾기 글자 */
+h1{
+   width: 11em;
+   border-bottom: 1px solid gray;
+   margin: 10px auto;
+   padding: 10px;
+}
+
+/* 비밀번호 찾기 버튼*/
+#button{
+     padding: 0.5em;
+  margin: 0.5em 1em;
+  margin-left: 3.5em;
+  width: 10em;
+  border-radius: 0.5em;
+  height: 2.6em;
+  background: white;
+ 
+}
+/* 이메일 인증 버튼*/
+#checkEmail{
+   padding: 0.5em;
+   
+ margin: 0.5em 1em;
+  width: 7em;
+  
+  border-radius: 0.5em;
+  height: 2.6em;
+  background: white;
+  
+}
+
+/* 아이디, 인증번호 글자*/
+#join_wrap label {
+   width: 23em;
+   text-align: left;
+   font-weight: 900;
+}
+
+/* 입력받는칸 묶은 필드셋*/
+#join_wrap{
+   margin: 0 auto;
+   width: 18em;
+/*    padding-left: 600px; */
+}
+
+/* 아이디 입력 받는 칸 */
+#userEmail{
+    padding: 0.5em;
+  margin: 0.5em 1em;
+  width: 15em;
+  border-radius: 0.5em;
+}
+
+/* 인증번호 입력받는 칸 */
+#usernum{
+    padding: 0.5em;
+  margin: 0.5em 1em;
+  width: 15em;
+  border-radius: 0.5em;
+}
+
+/* 이메일이 도착하는데 ~~~ */
+#A{
+   font-size: small;
+   padding-left: 30px;
+}
+#hiddenemailnum{
+   padding: 15px;
+}

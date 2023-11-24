@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* 아이디찾기(글자) 있는 섹션*/
+#join_box {
+	text-align: center;
+	margin: 0 auto;
+	width: 25em;
+}
+
+/*아이디찾기 버튼*/
+#button {
+	padding: 0.5em;
+	margin: 0.5em 1em;
+	width: 11em;
+	border-radius: 0.5em;
+	height: 2.4em;
+	background: white;
+	margin-left: 1em;
+}
+
+/* 아이디찾기 글자*/
+h1 {
+	width: 11em;
+	border-bottom: 1px solid gray;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+/* 이름, 전화번호 글자 */
+#join_wrap label {
+	width: 13em;
+	text-align: left;
+	font-weight: 900;
+	margin: auto;
+}
+
+/* 입력받는칸 묶은 필드셋*/
+#join_wrap {
+	text-align: center; 
+	width : 30em;
+	margin: 0 auto;
+	width: 30em;
+	/*    padding: 0 auto; */
+}
+
+/*이름 입력받는 칸  */
+#A {
+	padding: 0.5em;
+	margin: 0.5em 1em;
+	width: 15em;
+	border-radius: 0.5em;
+}
+
+/* 번호 입력받는 칸 */
+#B {
+	padding: 0.5em;
+	margin: 0.5em 1em;
+	width: 15em;
+	border-radius: 0.5em;
+}
+
+#hiddenMsgPhone {
+	padding: 15px;
+}

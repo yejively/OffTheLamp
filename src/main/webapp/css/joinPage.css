@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* 회원가입 전체 필드 */
+#join_box {
+  text-align: center;
+  margin: 0 auto;
+  width: 25em; 
+}
+
+#join_box p{
+	font-size: 14.4px;
+	text-align: left;
+}
+
+/* 필드셋  */
+#join_wrap {
+  padding: 1em;
+}
+
+
+
+/* 버튼(인증,서브밋)   */
+button, input[type="submit"],input[type="button"] {
+  padding: 0.5em;
+  margin: 0.5em 0.5em;
+  width: 9em;
+  border-radius: 0.5em;
+  background: white;
+}
+
+/* 중복확인 버튼   */
+#double_check, #certification{
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 7em;
+  margin-right: 0;
+  margin-left: 0.7em;
+  border-radius: 0.5em;
+  background: white;
+}
+/* 아이디 비밀번호 입력 필드 */
+input[type="text"], input[type="password"] {
+	padding: 0.5em;
+  	margin: 0.5em 0;
+	width: 23em;
+	border-radius: 0.5em;
+}
+/* 아이디 입력필드 */
+input[name="user_id"], input[name="emailRand"]{
+	width: 15em;
+	margin: 0.5em 0;
+}
+/* 설명 라벨 */
+#join_wrap label {
+	width: 23em;
+	text-align: left;
+	font-weight: 900;
+}
+/* 상단 회원가입 문구 */
+#join_box h1{
+	width: 11em;
+	border-bottom: 1px solid gray;
+	margin: 10px auto;
+	padding: 10px;
+}
+/*아이디 중복체크 결과 출력필드*/
+#chId{
+	width: 23em;
+	margin: 0;
+	font-size: 0.9em;
+	text-align: left;
+}
+
+/* 풋터 */
+#footer_b{
+	clear: left;
+}

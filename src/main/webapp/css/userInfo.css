@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+main {
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+	/* 	background: gray; */
+}
+
+main h1 {
+	width: 23em;
+	margin: 0 auto;
+	padding: 0.5em 2em;
+}
+
+/*--------------이동네이게이터?----------------------------------------  */
+#container {
+	width: 50em;
+	margin: 0 auto;
+	/* 	padding: 1em; */
+}
+
+#container input {
+	margin: 0;
+	background: white;
+	border: 1px solid gray;
+	border-radius: 0.2em;
+}
+
+/*------------------------------------------------------  */
+
+/* 마이페이지 테이블 필드 전체 */
+#table {
+	text-align: center;
+	margin: 1em auto;
+	font-weight: 900;
+}
+
+#table tbody {
+	padding: 10em;
+}
+/* 테이블 필드 가로줄 */
+#table tr {
+	height: 3rem;
+	background: #333333;
+	border-bottom: 1em solid gray;
+}
+/* 테이블 필드 세로줄 */
+#table td {
+	padding: 0.5em 1.0em;
+}
+/* 페이징 처리 */
+#page_control {
+	display: flex;
+	justify-content: center;
+}
+
+#page_control a {
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+#page_control div {
+	background: white;
+	width: 3em;
+	margin: 0 1px;
+	display: inline-block;
+	text-align: center;
+}
+
+.pageButtonBox {
+	box-shadow: 1px 1px 1px 1px black;
+}
+
+/* -------------------------회원정보 수정페이지 시작------------------------------------- */
+#userInfo_box {
+	margin: 0 auto;
+	padding: 1em;
+	width: 50em;
+	height: 35em;
+	background: gray;
+	/*   border: 1px solid white; */
+}
+
+#userInfo_box p {
+	font-size: 14.4px;
+	text-align: left;
+}
+
+/* 버튼(인증,서브밋)   */
+button, input[type="submit"], input[type="button"] {
+	padding: 0.5em;
+	margin: 0.5em 1em;
+	width: 10em;
+	border-radius: 0.5em;
+}
+
+/* 아이디 비밀번호 입력 필드 */
+input[type="text"], input[type="password"] {
+	padding: 0.5em;
+	margin: 0.5em 0;
+	width: 23em;
+	border-radius: 0.5em;
+}
+/* 설명 라벨 */
+#join_wrap label {
+	width: 23em;
+	text-align: left;
+	font-weight: 900;
+}
+/* 상단 회원가입 문구 */
+#userInfo_box h1 {
+	width: 11em;
+	border-bottom: 1px solid gray;
+	margin: 10px auto;
+	padding: 10px;
+}
+/*아이디 중복체크 결과 출력필드*/
+#chId {
+	width: 23em;
+	margin: 0;
+	font-size: 0.9em;
+	text-align: left;
+}
+/*------------------------모달----------------------------------  */
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-order {
+	display: none;
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25%;
+	height: 0%;
+	background-color:gray;
+}
+/*  .modal-order { */
+/* 	display: none; */
+/* 	position: fixed; */
+/* 	top: 0; */
+/* 	left: 0; */
+/* 	width: 100%; */
+/* 	height: 100%; */
+/* 	background-color: rgba(0, 0, 0, 0.7); */
+
+/*     } */
+.modal p, h2 {
+	color: black;
+}
+
+.modal-contents {
+	position: relative;
+	margin: 15% auto;
+	padding: 20px;
+	width: 40em;
+	height: 25em;
+	text-align: center;
+	background-color: gray;
+}
+
+.modal-contents-rent {
+	position: relative;
+	margin: 15% auto;
+	padding: 20px;
+	width: 40em;
+	height: 30em;
+	text-align: center;
+	background-color: gray;
+}
+.modal-contents-order {
+	position: relative;
+	margin: 15% auto;
+	padding: 20px;
+	width: 40em;
+/* 	height: 500px; */
+	text-align: center;
+	background-color: gray;
+}
+
+.modal-contents p {
+	float: left;
+	width: 15em;
+	margin: 0.5em;
+}
+
+.modal-contents input[type="button"] {
+	width: 6em;
+	height: 2em;
+	padding-bottom: 1.5em;
+	text-align: center;
+	font-weight: 900;
+	float: left;
+}
+
+.modal-contents-rent input[type="button"] {
+	width: 6em;
+	height: 2em;
+	padding-bottom: 1.5em;
+	text-align: center;
+	font-weight: 900;
+	float: left;
+}
+.modal-contents-order input[type="button"] {
+	width: 6em;
+	height: 2em;
+	padding-bottom: 1.5em;
+	text-align: center;
+	font-weight: 900;
+	float: left;
+}
+
+.modal-contents .close {
+	clear: left;
+	margin: 1em 15.5em;
+}
+
+.modal-contents-rent .close {
+	clear: left;
+	margin: 1em 15.5em;
+}
+.modal-contents-order .close {
+	clear: left;
+}
+
+.column {
+	color: darkgray;
+	text-shadow: 1px 0 black, 1px 0 black, 1px 0 black, 1px 0 black;
+}
+
+.column2 {
+	width: 20%;
+	color: darkgray;
+	text-shadow: 1px 0 black, 1px 0 black, 1px 0 black, 1px 0 black;
+}
+
+/* .close { */
+/* 	position: absolute; */
+/* 	top: 10px; */
+/* 	right: 10px; */
+/* 	cursor: pointer; */
+/* } */
+#cancelbtn {
+	background-color: #202020;
+	border: none;
+	font-weight: bolder;
+	font-size: x-large;
+}
+
+#cancelbtn:hover {
+	color: red;
+}
+
+.openModalBtn:hover {
+	/* 	text-shadow: 3px 3px 3px grey; */
+	color: red;
+}
