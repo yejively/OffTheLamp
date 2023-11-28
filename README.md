@@ -19,9 +19,8 @@ JSPMVC2 Model을 활용하여 개발
 ### 구현 부분
 
 - 자동차극장 예매 구현
-  <p align="center">
-  <img src="![화면 캡처 2023-11-28 143233](https://github.com/yejively/yejively/assets/143873963/3208400d-916b-4457-8e58-66df0de496a0)">
-</p>
+![화면 캡처 2023-11-28 143233](https://github.com/yejively/OffTheLamp/assets/143873963/395c820b-c18d-45dd-adf7-4e18b025d03f)
+
   
 
 
