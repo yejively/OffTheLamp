@@ -10,12 +10,8 @@
 <link href="./css/cinema.css" rel="stylesheet">
 <link href="./css/pay_v2.css" rel="stylesheet">
 <link href="./css/pay_v1.css" rel="stylesheet">
-<script src="./js/code.jquery.com_jquery-3.7.1.js"></script>
 <script type="text/javascript">
-<%-- 		<% --%>
-// 			String id = (String)session.getAttribute("user_id");
-// 			session.setAttribute("user_id", id);
-<%-- 		%> --%>
+
 		
 		$(function(){		
 		console.log("main -> pro 세션아이디 : "+"${sessionScope.user_id}");
@@ -57,169 +53,176 @@
 </script>
 </head>
 <body>
-<header>
-	<jsp:include page="/inc/topBar.jsp"></jsp:include>
-</header>
+	<header>
+		<jsp:include page="/inc/topBar.jsp"></jsp:include>
+	</header>
 	<!-- 여기 예매 페이지 꾸며아함. -->
 	<main>
 		<div id="body-wrapper">
-		<div id="body-content">
-		<section id="section">
-			<div class="divbox1">
-				<section>
-					<table>
-						<div class="divbox2">관람존 안내</div>
-						<div class="carInfo">
-							<tr>
-								<td class="td">차량번호</td>
-								<td class="td">차량종류</td>
-							</tr>
-							<tr>
-								<td><input type="text" value="${param.car_num }" readonly></td>
-								<td><input type="text" value="${param.car_type }" readonly></td>
-							</tr>
-						</div>					
-					</table>
-					
-						<div class="origin">
-							<div id="divXY2">SCREEN</div>
-						</div>
+			<div id="body-content">
+				<section id="section">
+					<div class="divbox1">
+						<section>
+							<table>
+								<div class="divbox2">관람존 안내</div>
+								<div class="carInfo">
+									<tr>
+										<td class="td">차량번호</td>
+										<td class="td">차량종류</td>
+									</tr>
+									<tr>
+										<td><input type="text" value="${param.car_num }" readonly></td>
+										<td><input type="text" value="${param.car_type }"
+											readonly></td>
+									</tr>
+								</div>
+							</table>
 
-					<div class="seatMap" id="seatMap"
-						style="width: 432px; height: 360px;">
+							<div class="origin">
+								<div id="divXY2">SCREEN</div>
+							</div>
 
-		<style>
-			.origin{
-			    border: 1px solid black;
-			    float: left;
-			    perspective: 150px;
-			    margin-top: 80px;
-			    margin-left: 100px;
-			}
-			#divXY2{
-				font-size: 30px;
-			    transform: rotateX(-30deg);
-			    color: black;
-			    text-align: center;
-			    line-height: 70px;
-			    font-weight: bold;
-			}
-			.origin > div{
-  				width: 300px;
-   				height: 70px;
-    			background-color: white;
-    			/* transition : all 3s; */
-			}
-			
-		</style>
+							<div class="seatMap" id="seatMap"
+								style="width: 432px; height: 360px;">
 
-						
-						<button type="button" id="0" class="seat soldout1"
-							style="top: 36px; left: 36px; background-color: #C8C8C8">A1</button>
-						<button type="button" id="1" class="seat soldout"
-							style="top: 36px; left: 72px; background-color: #C8C8C8">A2</button>
-						<button type="button" id="2" class="seat soldout"
-							style="top: 36px; left: 108px; background-color: #C8C8C8">A3</button>
-						<button type="button" id="3" class="seat soldout"
-							style="top: 36px; left: 144px; background-color: #C8C8C8">A4</button>
-						<button type="button" id="4" class="seat soldout"
-							style="top: 36px; left: 180px; background-color: #C8C8C8">A5</button>
-						<button type="button" id="5" class="seat soldout"
-							style="top: 36px; left: 216px; background-color: #C8C8C8">A6</button>
-						<button type="button" id="6" class="seat soldout"
-							style="top: 36px; left: 252px; background-color: #C8C8C8">A7</button>
-						<button type="button" id="7" class="seat soldout"
-							style="top: 36px; left: 288px; background-color: #C8C8C8">A8</button>
-						<button type="button" id="8" class="seat soldout"
-							style="top: 36px; left: 324px; background-color: #C8C8C8">A9</button>
-						<button type="button" id="9" class="seat soldout"
-							style="top: 36px; left: 360px; background-color: #C8C8C8">A10</button>
-						<button type="button" id="10" class="seat available"
-							style="top: 72px; left: 36px; background-color: #C8C8C8">B1</button>
-						<button type="button" id="11" class="seat available"
-							style="top: 72px; left: 72px; background-color: #C8C8C8">B2</button>
-						<button type="button" id="12" class="seat available"
-							style="top: 72px; left: 108px; background-color: #C8C8C8">B3</button>
-						<button type="button" id="13" class="seat available"
-							style="top: 72px; left: 144px; background-color: #C8C8C8">B4</button>
-						<button type="button" id="14" class="seat available"
-							style="top: 72px; left: 180px; background-color: #C8C8C8">B5</button>
-						<button type="button" id="15" class="seat available"
-							style="top: 72px; left: 216px; background-color: #C8C8C8">B6</button>
-						<button type="button" id="16" class="seat available"
-							style="top: 72px; left: 252px; background-color: #C8C8C8">B7</button>
-						<button type="button" id="17" class="seat available"
-							style="top: 72px; left: 288px; background-color: #C8C8C8">B8</button>
-						<button type="button" id="18" class="seat available"
-							style="top: 72px; left: 324px; background-color: #C8C8C8">B9</button>
-						<button type="button" id="19" class="seat available"
-							style="top: 72px; left: 360px; background-color: #C8C8C8">B10</button>
-						<button type="button" id="20" class="seat available"
-							style="top: 108px; left: 36px; background-color: #C8C8C8">C1</button>
-						<button type="button" id="21" class="seat available"
-							style="top: 108px; left: 72px; background-color: #C8C8C8">C2</button>
-						<button type="button" id="22" class="seat available"
-							style="top: 108px; left: 108px; background-color: #C8C8C8">C3</button>
-						<button type="button" id="23" class="seat available"
-							style="top: 108px; left: 144px; background-color: #C8C8C8">C4</button>
-						<button type="button" id="24" class="seat available"
-							style="top: 108px; left: 180px; background-color: #C8C8C8">C5</button>
-						<button type="button" id="25" class="seat available"
-							style="top: 108px; left: 216px; background-color: #C8C8C8">C6</button>
-						<button type="button" id="26" class="seat available"
-							style="top: 108px; left: 252px; background-color: #C8C8C8">C7</button>
-						<button type="button" id="27" class="seat available"
-							style="top: 108px; left: 288px; background-color: #C8C8C8">C8</button>
-						<button type="button" id="28" class="seat available"
-							style="top: 108px; left: 324px; background-color: #C8C8C8">C9</button>
-						<button type="button" id="29" class="seat available"
-							style="top: 108px; left: 360px; background-color: #C8C8C8">C10</button>
-						<button type="button" id="30" class="seat available"
-							style="top: 144px; left: 36px; background-color: #C8C8C8">D1</button>
-						<button type="button" id="31" class="seat available "
-							style="top: 144px; left: 72px; background-color: #C8C8C8">D2</button>
-						<button type="button" id="32" class="seat available"
-							style="top: 144px; left: 108px; background-color: #C8C8C8">D3</button>
-						<button type="button" id="33" class="seat available"
-							style="top: 144px; left: 144px; background-color: #C8C8C8">D4</button>
-						<button type="button" id="34" class="seat available"
-							style="top: 144px; left: 180px; background-color: #C8C8C8">D5</button>
-						<button type="button" id="35" class="seat available"
-							style="top: 144px; left: 216px; background-color: #C8C8C8">D6</button>
-						<button type="button" id="36" class="seat available"
-							style="top: 144px; left: 252px; background-color: #C8C8C8">D7</button>
-						<button type="button" id="37" class="seat available"
-							style="top: 144px; left: 288px; background-color: #C8C8C8">D8</button>
-						<button type="button" id="38" class="seat available"
-							style="top: 144px; left: 324px; background-color: #C8C8C8">D9</button>
-						<button type="button" id="39" class="seat available"
-							style="top: 144px; left: 360px; background-color: #C8C8C8">D10</button>
+								<style>
+#body-content {
+	padding-top: 3%
+}
+
+.origin {
+	border: 1px solid black;
+	float: left;
+	perspective: 150px;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+#divXY2 {
+	font-size: 30px;
+	transform: rotateX(-30deg);
+	color: black;
+	text-align: center;
+	line-height: 70px;
+	font-weight: bold;
+}
+
+.origin>div {
+	width: 300px;
+	height: 70px;
+	background-color: white;
+	/* transition : all 3s; */
+}
+</style>
+
+
+								<button type="button" id="0" class="seat soldout1"
+									style="top: 36px; left: 36px; background-color: #C8C8C8">A1</button>
+								<button type="button" id="1" class="seat soldout"
+									style="top: 36px; left: 72px; background-color: #C8C8C8">A2</button>
+								<button type="button" id="2" class="seat soldout"
+									style="top: 36px; left: 108px; background-color: #C8C8C8">A3</button>
+								<button type="button" id="3" class="seat soldout"
+									style="top: 36px; left: 144px; background-color: #C8C8C8">A4</button>
+								<button type="button" id="4" class="seat soldout"
+									style="top: 36px; left: 180px; background-color: #C8C8C8">A5</button>
+								<button type="button" id="5" class="seat soldout"
+									style="top: 36px; left: 216px; background-color: #C8C8C8">A6</button>
+								<button type="button" id="6" class="seat soldout"
+									style="top: 36px; left: 252px; background-color: #C8C8C8">A7</button>
+								<button type="button" id="7" class="seat soldout"
+									style="top: 36px; left: 288px; background-color: #C8C8C8">A8</button>
+								<button type="button" id="8" class="seat soldout"
+									style="top: 36px; left: 324px; background-color: #C8C8C8">A9</button>
+								<button type="button" id="9" class="seat soldout"
+									style="top: 36px; left: 360px; background-color: #C8C8C8">A10</button>
+								<button type="button" id="10" class="seat available"
+									style="top: 72px; left: 36px; background-color: #C8C8C8">B1</button>
+								<button type="button" id="11" class="seat available"
+									style="top: 72px; left: 72px; background-color: #C8C8C8">B2</button>
+								<button type="button" id="12" class="seat available"
+									style="top: 72px; left: 108px; background-color: #C8C8C8">B3</button>
+								<button type="button" id="13" class="seat available"
+									style="top: 72px; left: 144px; background-color: #C8C8C8">B4</button>
+								<button type="button" id="14" class="seat available"
+									style="top: 72px; left: 180px; background-color: #C8C8C8">B5</button>
+								<button type="button" id="15" class="seat available"
+									style="top: 72px; left: 216px; background-color: #C8C8C8">B6</button>
+								<button type="button" id="16" class="seat available"
+									style="top: 72px; left: 252px; background-color: #C8C8C8">B7</button>
+								<button type="button" id="17" class="seat available"
+									style="top: 72px; left: 288px; background-color: #C8C8C8">B8</button>
+								<button type="button" id="18" class="seat available"
+									style="top: 72px; left: 324px; background-color: #C8C8C8">B9</button>
+								<button type="button" id="19" class="seat available"
+									style="top: 72px; left: 360px; background-color: #C8C8C8">B10</button>
+								<button type="button" id="20" class="seat available"
+									style="top: 108px; left: 36px; background-color: #C8C8C8">C1</button>
+								<button type="button" id="21" class="seat available"
+									style="top: 108px; left: 72px; background-color: #C8C8C8">C2</button>
+								<button type="button" id="22" class="seat available"
+									style="top: 108px; left: 108px; background-color: #C8C8C8">C3</button>
+								<button type="button" id="23" class="seat available"
+									style="top: 108px; left: 144px; background-color: #C8C8C8">C4</button>
+								<button type="button" id="24" class="seat available"
+									style="top: 108px; left: 180px; background-color: #C8C8C8">C5</button>
+								<button type="button" id="25" class="seat available"
+									style="top: 108px; left: 216px; background-color: #C8C8C8">C6</button>
+								<button type="button" id="26" class="seat available"
+									style="top: 108px; left: 252px; background-color: #C8C8C8">C7</button>
+								<button type="button" id="27" class="seat available"
+									style="top: 108px; left: 288px; background-color: #C8C8C8">C8</button>
+								<button type="button" id="28" class="seat available"
+									style="top: 108px; left: 324px; background-color: #C8C8C8">C9</button>
+								<button type="button" id="29" class="seat available"
+									style="top: 108px; left: 360px; background-color: #C8C8C8">C10</button>
+								<button type="button" id="30" class="seat available"
+									style="top: 144px; left: 36px; background-color: #C8C8C8">D1</button>
+								<button type="button" id="31" class="seat available "
+									style="top: 144px; left: 72px; background-color: #C8C8C8">D2</button>
+								<button type="button" id="32" class="seat available"
+									style="top: 144px; left: 108px; background-color: #C8C8C8">D3</button>
+								<button type="button" id="33" class="seat available"
+									style="top: 144px; left: 144px; background-color: #C8C8C8">D4</button>
+								<button type="button" id="34" class="seat available"
+									style="top: 144px; left: 180px; background-color: #C8C8C8">D5</button>
+								<button type="button" id="35" class="seat available"
+									style="top: 144px; left: 216px; background-color: #C8C8C8">D6</button>
+								<button type="button" id="36" class="seat available"
+									style="top: 144px; left: 252px; background-color: #C8C8C8">D7</button>
+								<button type="button" id="37" class="seat available"
+									style="top: 144px; left: 288px; background-color: #C8C8C8">D8</button>
+								<button type="button" id="38" class="seat available"
+									style="top: 144px; left: 324px; background-color: #C8C8C8">D9</button>
+								<button type="button" id="39" class="seat available"
+									style="top: 144px; left: 360px; background-color: #C8C8C8">D10</button>
+							</div>
+
+
+						</section>
 					</div>
 
+					<div class="divbox3">
+						<section>
+							<div class="divbox4">결제</div>
+							<p>영화</p>
+							<input type="text" id="movieName" value="${param.movie }"
+								readonly>
+							<p>극장</p>
+							<input type="text" value="${param.cinema }" readonly>
+							<p>상영시간</p>
+							<input type="text" value="${param.time }" readonly>
+							<p>영화가격</p>
+							<input type="text" id="price" value="${param.price }" readonly>
+							<p>좌석</p>
+							<input type="text" id="seat" readonly> <input
+								class="btn1" type="button" id="re2" value="결제"
+								onclick="requestPay()">
+						</section>
+					</div>
 
 				</section>
 			</div>
-
-			<div class="divbox3">
-				<section>
-					<div class="divbox4">결제</div>				
-					<p>영화</p>
-					<input type="text" id="movieName" value="${param.movie }" readonly>
-					<p>극장</p>
-					<input type="text" value="${param.cinema }" readonly>
-					<p>상영시간</p>
-					<input type="text" value="${param.time }" readonly>
-					<p>영화가격</p>
-					<input type="text" id="price" value="${param.price }" readonly>
-					<p>좌석</p>
-					<input type="text" id="seat" readonly>
-					<input class="btn1" type="button" id="re2" value="결제"
-					onclick="requestPay()">
-				</section>
-			</div>
-
-		</section>
-		</div>
 	</main>
 
 	<script src="https://cdn.iamport.kr/v1/iamport.js"></script>
@@ -312,7 +315,7 @@
 		} //requestPay()
 
 	</script>
-	
+
 	<input type="hidden" id="seathi">
 
 	<!-- footer아래로는 코드 금지 -->
