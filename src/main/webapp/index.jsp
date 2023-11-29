@@ -6,8 +6,6 @@
 <title>Off The Lamp</title>
 </head>
 <body>
-	<h1> index.jsp </h1>
-	
 	<%
 		// 첫시작페이지 !
 		response.sendRedirect("./Main.me");
