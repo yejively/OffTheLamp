@@ -43,7 +43,7 @@
 	</header>
 	<main>
 	<div id="container">
-		<input class="btn" type="button" style="background: gray;" value="예매관리"	onclick="location.href='./managerList.or'">
+		<input class="btn" type="button" style="background: darkgray;" value="예매관리"	onclick="location.href='./managerList.or'">
 		<input class="btn" type="button" value="회원정보수정"	onclick="location.href='./AdminUserInfoBoardAction.me'">
 		<input class="btn" type="button" value="대관문의"	onclick="location.href='./AdminRentInfoBoardAction.me'">
 	</div>
