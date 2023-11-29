@@ -15,9 +15,9 @@ main h1 {
 
 /*--------------이동네이게이터?----------------------------------------  */
 #container {
-	width: 50em;
+	width: 60em;
 	margin: 0 auto;
-	/* 	padding: 1em; */
+	margin-top: 2%;
 }
 
 #container input {
@@ -34,21 +34,25 @@ main h1 {
 	text-align: center;
 	margin: 1em auto;
 	font-weight: 900;
+	font-size: larger;
 }
 
 #table tbody {
 	padding: 10em;
 }
+
 /* 테이블 필드 가로줄 */
 #table tr {
 	height: 3rem;
 	background: #333333;
 	border-bottom: 1em solid gray;
 }
+
 /* 테이블 필드 세로줄 */
 #table td {
 	padding: 0.5em 1.0em;
 }
+
 /* 페이징 처리 */
 #page_control {
 	display: flex;
@@ -78,9 +82,9 @@ main h1 {
 #userInfo_box {
 	margin: 0 auto;
 	padding: 1em;
-	width: 50em;
-	height: 35em;
-	background: gray;
+	width: 60em;
+	height: 45em;
+	background: darkgray;
 	/*   border: 1px solid white; */
 }
 
@@ -90,7 +94,9 @@ main h1 {
 }
 
 /* 버튼(인증,서브밋)   */
-button, input[type="submit"], input[type="button"] {
+button,
+input[type="submit"],
+input[type="button"] {
 	padding: 0.5em;
 	margin: 0.5em 1em;
 	width: 10em;
@@ -98,25 +104,36 @@ button, input[type="submit"], input[type="button"] {
 }
 
 /* 아이디 비밀번호 입력 필드 */
-input[type="text"], input[type="password"] {
+input[type="password"] {
 	padding: 0.5em;
 	margin: 0.5em 0;
 	width: 23em;
 	border-radius: 0.5em;
 }
+
+input[type="text"] {
+	padding: 0.5em;
+	margin: 0.5em 0;
+	width: 18em;
+	border-radius: 0.5em;
+	margin-left: 42%;
+}
+
 /* 설명 라벨 */
 #join_wrap label {
 	width: 23em;
 	text-align: left;
 	font-weight: 900;
 }
+
 /* 상단 회원가입 문구 */
 #userInfo_box h1 {
 	width: 11em;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid darkgrey;
 	margin: 10px auto;
 	padding: 10px;
 }
+
 /*아이디 중복체크 결과 출력필드*/
 #chId {
 	width: 23em;
@@ -124,6 +141,7 @@ input[type="text"], input[type="password"] {
 	font-size: 0.9em;
 	text-align: left;
 }
+
 /*------------------------모달----------------------------------  */
 .modal {
 	display: none;
@@ -143,8 +161,9 @@ input[type="text"], input[type="password"] {
 	transform: translate(-50%, -50%);
 	width: 25%;
 	height: 0%;
-	background-color:gray;
+	background-color: gray;
 }
+
 /*  .modal-order { */
 /* 	display: none; */
 /* 	position: fixed; */
@@ -155,7 +174,8 @@ input[type="text"], input[type="password"] {
 /* 	background-color: rgba(0, 0, 0, 0.7); */
 
 /*     } */
-.modal p, h2 {
+.modal p,
+h2 {
 	color: black;
 }
 
@@ -178,12 +198,13 @@ input[type="text"], input[type="password"] {
 	text-align: center;
 	background-color: gray;
 }
+
 .modal-contents-order {
 	position: relative;
 	margin: 15% auto;
 	padding: 20px;
 	width: 40em;
-/* 	height: 500px; */
+	/* 	height: 500px; */
 	text-align: center;
 	background-color: gray;
 }
@@ -211,6 +232,7 @@ input[type="text"], input[type="password"] {
 	font-weight: 900;
 	float: left;
 }
+
 .modal-contents-order input[type="button"] {
 	width: 6em;
 	height: 2em;
@@ -229,6 +251,7 @@ input[type="text"], input[type="password"] {
 	clear: left;
 	margin: 1em 15.5em;
 }
+
 .modal-contents-order .close {
 	clear: left;
 }
