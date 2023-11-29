@@ -10,6 +10,7 @@
 <link href="./css/cinema.css" rel="stylesheet">
 <link href="./css/pay_v2.css" rel="stylesheet">
 <link href="./css/pay_v1.css" rel="stylesheet">
+<script src="./js/code.jquery.com_jquery-3.7.1.js"></script>
 <script type="text/javascript">
 
 		
