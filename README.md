@@ -22,6 +22,7 @@ JSPMVC2 Model을 활용하여 개발
 
 <img src="https://github.com/yejively/OffTheLamp/assets/143873963/395c820b-c18d-45dd-adf7-4e18b025d03f.png" width="700" heigth="500">
 
+
 - 지역 > 극장 > 영화 > 시간 ajax 비동기처리로 선택시 해당되는 내용을 구현
 - 자동차극장의 특성상 차량의 크기에따라 차량 배치를위해 차량정보를 등록
 - jquery를 사용해 예매정보, 차량정보가 없을 시 알림창을 통해 접근제한
