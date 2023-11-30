@@ -20,7 +20,7 @@
 ### 개발 환경
 JSPMVC2 Model을 활용하여 개발
 
-### 포르젝트 구현
+### 포르젝트 시연
 ✔️ **메인페이지 구현**
 ---
 <img src="https://github.com/yejively/OffTheLamp/assets/143873963/b9c832e5-e40e-441d-b0e9-a917bc5f643f.gif" width="700" heigth="500">
