@@ -19,12 +19,12 @@ JSPMVC2 Model을 활용하여 개발
 ### 구현 부분
 ✔️ **메인페이지 구현**
 ---
-<img src="https://github.com/yejively/OffTheLamp/assets/143873963/b9c832e5-e40e-441d-b0e9-a917bc5f643f.gif" width="800" heigth="500">
+<img src="https://github.com/yejively/OffTheLamp/assets/143873963/b9c832e5-e40e-441d-b0e9-a917bc5f643f.gif" width="700" heigth="500">
 
 ---
 ✔️ **자동차극장 예매 구현**
 ---
-<img src="https://github.com/yejively/yejively/assets/143873963/cdf45548-fbd9-4e7a-9a9c-98ec81c1a1b2.gif" width="800" heigth="500">
+<img src="https://github.com/yejively/OffTheLamp/assets/143873963/bcde3aa1-b7c7-4104-92ba-d9bd39a7039f.gif" width="700" heigth="500">
 
 
 - 지역 > 극장 > 영화 > 시간 ajax 비동기처리로 선택시 해당되는 내용을 구현
