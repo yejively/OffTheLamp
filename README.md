@@ -35,8 +35,13 @@
         <td> Git / Github / Notion / Discord  </td>
      </tr>
   </table>
-
-### 포르젝트 시연
+---
+## 프로젝트 자료 
+- [프로젝트 ppt](https://drive.google.com/file/d/15zxT7guDY57XbQDC7Om5K1Oddz8oPTxv/view?usp=sharing)
+- [요구사항 명세서](https://docs.google.com/spreadsheets/d/121b-0Syd5_DSfEWAOKdMIVIs-jJyTUfOhzT2vW8vjnA/edit?usp=sharing)
+- [ERD](https://drive.google.com/file/d/1CpGhDHFUAILwhrDFHKbwBACwU4BPW9W9/view?usp=sharing)
+---
+## 포르젝트 시연
 ✔️ **메인페이지 구현**
 ---
 <img src="https://github.com/yejively/OffTheLamp/assets/143873963/b9c832e5-e40e-441d-b0e9-a917bc5f643f.gif" width="700" heigth="500">
