@@ -42,13 +42,11 @@
 - [ERD](https://drive.google.com/file/d/1CpGhDHFUAILwhrDFHKbwBACwU4BPW9W9/view?usp=sharing)
 ---
 ## 포르젝트 시연
-✔️ **메인페이지 구현**
----
+#### 메인페이지 구현
 <img src="https://github.com/yejively/OffTheLamp/assets/143873963/b9c832e5-e40e-441d-b0e9-a917bc5f643f.gif" width="700" heigth="500">
 
 ---
-✔️ **자동차극장 예매 구현**
----
+#### 자동차극장 예매 구현
 <img src="https://github.com/yejively/OffTheLamp/assets/143873963/bcde3aa1-b7c7-4104-92ba-d9bd39a7039f.gif" width="700" heigth="500">
 
 💡 예매페이지
