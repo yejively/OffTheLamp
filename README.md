@@ -57,6 +57,24 @@
 💡 결제페이지
 - 예매페이지에서 전달받은 데이터 출력
 - 기존에 팔린 좌석들의 데이터를 전달받아 처리
+```Javascript
+  		function showSeat(){	
+			var getSeat = "${param.seat}";
+ 			var seatList = getSeat.split(',');	// getSeat를 ,로구분해 배열로 저장
+			
+	 		for(var i=0; i<seatList.length-1; i++){
+	 			for(var j=0; j<40; j++){		
+ 	 					if($("#"+j).text()==seatList[i]){
+	 						$('#'+j).css('backgroundColor','black');
+	 						$('#'+j).addClass("xxseat");
+	 						$('#'+j).off('click');	// 팔린좌석은 선택안됨.
+	 					}
+	 			}
+	 		}
+		}
+```
+</details>
+
 - 좌석 선택 > 결제 api 포트원을 이용해 통합 결제 연동 구현
 
 💡 마이페이지 예매내역
