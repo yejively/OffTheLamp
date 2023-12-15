@@ -4,8 +4,11 @@
 > 자동차 극장의 위치 및 간단한 정보를 한눈에 볼 수 있으며 영화를 예매하고 결제할 수 있는 사이트를 구현한 JSP MVC 모델2 프로젝트
 
 - 프로젝트 기간 : 2023.08.24 ~ 2023.09.27
+- 개발 목적 : 거리두기로 인해 문화산업 침체에도 불구하고, 자동차 극장은<br>
+             특유의 프라이빗함으로 성수기를 맞이했으나 관련 정보 한 번에 모아 놓은 사이트가 없고,<br>
+             예매방식도 과거에 머물러있는 문제를 해결해 보기 위해 개발하였습니다.
 - 개발 인원 : 6명(팀프로젝트)
-- 역할 : 메인페이지, 예매, 결제, 예매내역
+- 맡은 역할 : 메인페이지, 예매, 결제, 예매내역
 - 개발 환경 : JSPMVC2 Model을 활용하여 개발
 - 사용 기술
 
@@ -41,7 +44,7 @@
 - [요구사항 명세서](https://docs.google.com/spreadsheets/d/121b-0Syd5_DSfEWAOKdMIVIs-jJyTUfOhzT2vW8vjnA/edit?usp=sharing)
 - [ERD](https://drive.google.com/file/d/1CpGhDHFUAILwhrDFHKbwBACwU4BPW9W9/view?usp=sharing)
 ---
-## 포르젝트 시연
+## 포르젝트 시연 - 담당한 기능(Front + Back)
 #### 메인페이지 구현
 <img src="https://github.com/yejively/OffTheLamp/assets/143873963/b9c832e5-e40e-441d-b0e9-a917bc5f643f.gif" width="700" heigth="500">
 
@@ -50,7 +53,7 @@
 <img src="https://github.com/yejively/OffTheLamp/assets/143873963/bcde3aa1-b7c7-4104-92ba-d9bd39a7039f.gif" width="700" heigth="500">
 
 💡 예매페이지
-- 지역 > 극장 > 영화 > 시간 ajax 비동기 처리로 선택 시 해당하는 내용을 구현
+- [ 지역 > 극장 > 영화 > 시간 ] ajax 비동기 처리로 선택 시 해당하는 내용을 구현
 - 자동차 극장의 특성상 차량의 크기에 따라 차량 배치를 위해 차량 정보를 등록
 - jquery를 사용해 예매정보, 차량 정보가 없을 시 알림창을 통해 접근제한
 
