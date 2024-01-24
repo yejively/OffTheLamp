@@ -79,6 +79,61 @@
 </details>
 
 - 좌석 선택 > 결제 api 포트원을 이용해 통합 결제 연동 구현
+```Javascript
+	// 결제 api 실행
+				IMP.request_pay({
+					pg : "html5_inicis.INIpayTest",
+					pay_method : "card",
+					merchant_uid : uniqeNum+a,
+					name : $('#movieName').val(),
+					amount : $('#price').val(),  	//  $('#price').val()
+					buyer_tel : info[1],
+					buyer_name : info[0],
+				}, function(rsp) {
+					if (rsp.success) {
+						var time = "${param.time}";
+						jQuery.ajax({
+							url : "./paymentSuccess.or",
+							method : "POST",
+							data : {
+								// 결제 + 예매테이블에 필요한 정보를 담아갈거임.
+								"imp_uid" : rsp.imp_uid,
+								"merchant_uid" : rsp.merchant_uid,
+								"pg" : "inicis",
+								"payment_method" : rsp.pay_method,
+								"movie_name" : "${param.movie}",
+								"price" : ${param.price},
+ 								"name" : info[0],
+ 								"phone": info[1],	
+ 								"nonphone":id,	
+ 								"region" : "${param.region}",
+ 								"user_num" : info[2],
+ 								"id" : "${sessionScope.id}",		
+ 								"cinema" : "${param.cinema}",
+ 								"car_type" : "${param.car_type}",
+ 								"car_num" : "${param.car_num}",
+ 								"time" : "${param.time}",
+ 								"seat" : $('#seat').val()
+							},success:function(){
+ 								var id = "${sessionScope.user_id}";
+ 								if(id.indexOf('@') != -1){
+ 									alert("결제완료 마이페이지로 이동하겠습니다.");	
+ 									location.href="./MyPageMain.or";
+ 								}else{
+ 									alert("결제완료 비회원 예매취소/환불은 고객센터로 문의해주세요")
+ 									location.href='./Main.or';
+ 								}							
+							}						
+						}).done(function() {
+
+						})
+					} else {
+						alert("결제에 실패하였습니다. 에러 내용: " + rsp.error_msg);
+					} 
+				});
+```
+</details>
+
 
 💡 마이페이지 예매내역
 - 정상적인 결제 진행 후 마이페이지 > 예매내역 이동
