@@ -16,6 +16,8 @@
 		
 		$(function(){		
 		console.log("main -> pro 세션아이디 : "+"${sessionScope.user_id}");
+		
+		
 					
 		function showSeat(){
 			
@@ -26,8 +28,7 @@
  			console.log(seatList.length);
 			
 	 		for(var i=0; i<seatList.length-1; i++){
-	 			for(var j=0; j<40; j++){
-	 		
+	 			for(var j=0; j<40; j++){		
  	 					if($("#"+j).text()==seatList[i]){
 	 						console.log("seatList["+i+"]");
 	 						$('#'+j).css('backgroundColor','black');
@@ -37,6 +38,7 @@
 	 			}
 	 		}
 		}
+		
 		
 		$("button[type='button']").click(function(){	
 			$("button[type='button']").not('.xxseat').css('backgroundColor','#C8C8C8');
@@ -258,26 +260,19 @@
 					pay_method : "card",
 					merchant_uid : uniqeNum+a,
 					name : $('#movieName').val(),
-					amount : 100,  	//  $('#price').val()
+					amount : $('#price').val(),  	//  $('#price').val()
 					buyer_tel : info[1],
 					buyer_name : info[0],
-				}, function(rsp) { // callback
-					//rsp.imp_uid 값으로 결제 단건조회 API를 호출하여 결제결과를 판단합니다.
+				}, function(rsp) {
 					if (rsp.success) {
-						// 결제 성공 시: 결제 승인 또는 가상계좌 발급에 성공한 경우
-						// jQuery로 HTTP 요청
-						console.log("주문번호 : "+rsp.merchant_uid);
-						console.log(rsp.imp_uid);
-						console.log(rsp.pay_method);
 						var time = "${param.time}";
-						console.log("pro time : "+time);
 						jQuery.ajax({
 							url : "./paymentSuccess.or",
 							method : "POST",
 							data : {
 								// 결제 + 예매테이블에 필요한 정보를 담아갈거임.
-								"imp_uid" : rsp.imp_uid, // 결제 고유번호
-								"merchant_uid" : rsp.merchant_uid, // 주문번호
+								"imp_uid" : rsp.imp_uid,
+								"merchant_uid" : rsp.merchant_uid,
 								"pg" : "inicis",
 								"payment_method" : rsp.pay_method,
 								"movie_name" : "${param.movie}",
@@ -292,7 +287,7 @@
  								"car_type" : "${param.car_type}",
  								"car_num" : "${param.car_num}",
  								"time" : "${param.time}",
- 								"seat" : $('#seat').val()	// 바꿔야함.
+ 								"seat" : $('#seat').val()
 							},success:function(){
  								var id = "${sessionScope.user_id}";
  								if(id.indexOf('@') != -1){
