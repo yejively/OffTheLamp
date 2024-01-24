@@ -81,6 +81,7 @@
 - 좌석 선택 > 결제 api 포트원을 이용해 통합 결제 연동 구현
 <details>
 	<summary>결제 구현 코드</summary>
+	
 ```Javascript
 	// 결제 api 실행
 	IMP.request_pay({
